@@ -1,4 +1,4 @@
-# ES6-Timer
-zadanie 15-6
+# ES6-React-Timer
+zadanie 15-7
 
-https://magmiszewska.github.io/ES6-Timer/
+https://magmiszewska.github.io/ES6-React-Timer/
