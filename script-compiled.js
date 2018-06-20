@@ -25,6 +25,11 @@ var Stopwatch = function (_React$Component) {
             },
             results: []
         };
+        _this.start = _this.start.bind(_this);
+        _this.stop = _this.stop.bind(_this);
+        _this.reset = _this.reset.bind(_this);
+        _this.save = _this.save.bind(_this);
+        _this.clear = _this.clear.bind(_this);
         return _this;
     }
 
@@ -116,27 +121,27 @@ var Stopwatch = function (_React$Component) {
                     { className: "controls" },
                     React.createElement(
                         "button",
-                        { onClick: this.start.bind(this) },
+                        { onClick: this.start },
                         "Start"
                     ),
                     React.createElement(
                         "button",
-                        { onClick: this.stop.bind(this) },
+                        { onClick: this.stop },
                         "Stop"
                     ),
                     React.createElement(
                         "button",
-                        { onClick: this.reset.bind(this) },
+                        { onClick: this.reset },
                         "Reset"
                     ),
                     React.createElement(
                         "button",
-                        { onClick: this.save.bind(this) },
+                        { onClick: this.save },
                         "Save"
                     ),
                     React.createElement(
                         "button",
-                        { onClick: this.clear.bind(this) },
+                        { onClick: this.clear },
                         "Clear"
                     )
                 ),

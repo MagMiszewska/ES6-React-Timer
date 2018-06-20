@@ -9,7 +9,12 @@ class Stopwatch extends React.Component {
                 miliseconds: 0
             },
             results: []
-        }
+        };
+        this.start = this.start.bind(this);
+        this.stop = this.stop.bind(this);
+        this.reset = this.reset.bind(this);
+        this.save = this.save.bind(this);
+        this.clear = this.clear.bind(this);
     }
 
     reset() {
@@ -77,11 +82,11 @@ class Stopwatch extends React.Component {
         return (
             <div>
                 <div className="controls">
-                    <button onClick={this.start.bind(this)}>Start</button>
-                    <button onClick={this.stop.bind(this)}>Stop</button>
-                    <button onClick={this.reset.bind(this)}>Reset</button>
-                    <button onClick={this.save.bind(this)}>Save</button>
-                    <button onClick={this.clear.bind(this)}>Clear</button>
+                    <button onClick={this.start}>Start</button>
+                    <button onClick={this.stop}>Stop</button>
+                    <button onClick={this.reset}>Reset</button>
+                    <button onClick={this.save}>Save</button>
+                    <button onClick={this.clear}>Clear</button>
                 </div>
                 <div className="stopwatch">
                     {this.format(this.state.times)}
